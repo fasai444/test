@@ -1,0 +1,139 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:minHeight="500dp"
+    android:padding="24dp"
+    tools:context=".fragments.ToDoDialogFragment">
+
+    <!-- Close Button -->
+    <ImageView
+        android:id="@+id/todoClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Task Title Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/todoClose">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/todoEt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+        android:hint="Enter Task Title"
+        android:padding="12dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Other Inputs -->
+
+    <!-- Due Date Input -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/dueDateInputLayout"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/titleInputLayout">
+
+<com.google.android.material.textfield.TextInputEditText
+android:id="@+id/dueDateEditText"
+android:layout_width="match_parent"
+android:layout_height="56dp"
+android:background="@color/white"
+android:clickable="true"
+android:focusable="false"
+android:hint="Select Due Date"
+android:padding="12dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Due Time Input -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/dueTimeInputLayout"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/dueDateInputLayout">
+
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/dueTimeEditText"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="false"
+    android:hint="Select Due Time"
+    android:padding="12dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Category Input -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/categoryInputLayout"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/dueTimeInputLayout">
+
+<AutoCompleteTextView
+    android:id="@+id/categoryDropdown"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:hint="Select Category"
+    android:inputType="none"
+    android:padding="12dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Priority Input -->
+<com.google.android.material.textfield.TextInputLayout
+android:id="@+id/priorityInputLayout"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/categoryInputLayout">
+
+<AutoCompleteTextView
+    android:id="@+id/priorityDropdown"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:hint="Select Priority"
+    android:inputType="none"
+    android:padding="12dp" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Button -->
+<ImageView
+android:id="@+id/todoNextBtn"
+android:layout_width="60dp"
+android:layout_height="60dp"
+android:layout_marginTop="16dp"
+android:src="@drawable/btn"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/priorityInputLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </layout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "377943084334",
+    "project_id": "kotlintodopractice-d16b9",
+    "storage_bucket": "kotlintodopractice-d16b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377943084334:android:fd9a5854d081d5db6cfebf",
+        "android_client_info": {
+          "package_name": "com.example.kotlintodopractice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRSls2nqEXgDB89RC29Edf-eZN6QuvrVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
